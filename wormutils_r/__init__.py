@@ -1,1 +1,1 @@
-from .R_output import R_output
+from .R_output import R_output, test_capture

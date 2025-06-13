@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wormutils_r",
-    version="0.0.1",
+    version="0.0.2",
     author="Grayson Boyer",
     author_email="gmboyer@asu.edu",
     description="A package for common functions containing R/rpy2 used in other WORM codes",
@@ -18,7 +18,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.8',
     install_requires=['rpy2'],
     include_package_data=True,
     package_data={},
