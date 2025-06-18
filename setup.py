@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="wormutils_r",
-    version="0.0.2",
+    version="0.1.0",
     author="Grayson Boyer",
     author_email="gmboyer@asu.edu",
     description="A package for common functions containing R/rpy2 used in other WORM codes",
@@ -19,7 +19,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.10',
-    install_requires=['rpy2', 'dill', 'pandas'],
+    install_requires=['rpy2', 'dill', 'pandas', 'numpy'],
     include_package_data=True,
     package_data={},
     zip_safe=False

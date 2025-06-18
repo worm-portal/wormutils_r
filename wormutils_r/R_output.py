@@ -42,7 +42,7 @@ class R_output(object):
         Cleans up R output for printing (e.g., removes "[1]" and end-of-line designators)
         """
         printable_lines = [line for line in self.stdout if line not in ['[1]', '\n']]
-        printable_lines = [line for line in printable_lines if re.search("^\s*\[[0-9]+\]$", line) is None]
+        printable_lines = [line for line in printable_lines if re.search(r"^\s*\[[0-9]+\]$", line) is None]
         printable_lines = [re.sub(r' \\n\"', "", line) for line in printable_lines]
         [print(line) for line in printable_lines]
         
