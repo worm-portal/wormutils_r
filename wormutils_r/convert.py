@@ -21,6 +21,9 @@ def rpy2float(v):
     
     if isinstance(v, numpy.float64):
         v = float(v)
+
+    if isinstance(v, numpy.int64):
+        v = int(v)
         
     return v
 
